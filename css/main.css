@@ -1,1 +1,77 @@
 /* Place CSS styles here */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Page Styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #0d0d0d;
+    color: #ff7518;
+    font-family: 'Creepster', cursive; /* Add Google font for spooky effect */
+    overflow: hidden;
+}
+
+/* Card Container */
+.card {
+    text-align: center;
+    color: #ff7518;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Halloween Header */
+h1 {
+    font-size: 4em;
+    text-shadow: 2px 2px #000000;
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+/* Subtitle */
+h2 {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 2em;
+    margin: 10px;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px #ff7518;
+    animation: shake 1.5s ease-in-out infinite;
+}
+
+/* Animated Message */
+p {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.5em;
+    color: #ffdd57;
+    margin: 20px 0;
+    animation: fadeInUp 2s ease-in-out 1s forwards;
+    opacity: 0;
+}
+
+/* Keyframes for Animations */
+@keyframes glow {
+    from { text-shadow: 0 0 5px #ff7518, 0 0 10px #ff7518, 0 0 15px #ff7518; }
+    to { text-shadow: 0 0 20px #ffffff, 0 0 30px #ff7518, 0 0 40px #ff7518; }
+}
+
+@keyframes shake {
+    0% { transform: translate(0px, 0px) rotate(0deg); }
+    20% { transform: translate(-2px, 2px) rotate(-2deg); }
+    40% { transform: translate(2px, -2px) rotate(2deg); }
+    60% { transform: translate(-2px, 2px) rotate(-2deg); }
+    80% { transform: translate(2px, -2px) rotate(2deg); }
+    100% { transform: translate(0px, 0px) rotate(0deg); }
+}
+
+@keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
