@@ -24,11 +24,11 @@
 
 <body>
   <!-- Place your site's HTML here -->
-  <h1>HalloweenTown</h1>
+  <h1>TigerTown</h1>
   <div class="card">
     <h1>Happy Halloween!</h1>
     <h2>BOO! 🎃</h2>
-    <p>Wishing you a night full of frights and a bag full of delights!</p>
+    <p>Wishing you a night full of frights and a heavy bag of candyyy</p>
 
     <div class="bats">
       <div class="bat bat1">🦇</div>
@@ -36,6 +36,18 @@
       <div class="bat bat3">🦇</div>
   </div>
    
+ <div class="overlay" id="overlay">
+    <div class="overlay-content">
+        <h1>You're Invited!</h1>
+        <p>Click to open your Halloween card</p>
+        <button onclick="openCard()">Open</button>
+    </div>
+ 
+ <script>
+    function openCard() {
+        document.getElementById("overlay").style.display = "none";
+    }
+</script>
    
    
    
