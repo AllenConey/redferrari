@@ -5,7 +5,6 @@
     box-sizing: border-box;
 }
 
-/* Page Styling */
 body {
     display: flex;
     justify-content: center;
@@ -17,21 +16,18 @@ body {
     overflow: hidden;
 }
 
-/* Card Container */
 .card {
     text-align: center;
     color: #ff7518;
     animation: fadeIn 2s ease-in-out;
 }
 
-/* Halloween Header */
 h1 {
     font-size: 4em;
     text-shadow: 2px 2px #000000;
     animation: glow 2s ease-in-out infinite alternate;
 }
 
-/* Subtitle */
 h2 {
     font-family: 'Permanent Marker', cursive;
     font-size: 2em;
@@ -41,7 +37,6 @@ h2 {
     animation: shake 1.5s ease-in-out infinite;
 }
 
-/* Animated Message */
 p {
     font-family: 'Arial', sans-serif;
     font-size: 1.5em;
@@ -51,7 +46,6 @@ p {
     opacity: 0;
 }
 
-/* Keyframes for Animations */
 @keyframes glow {
     from { text-shadow: 0 0 5px #ff7518, 0 0 10px #ff7518, 0 0 15px #ff7518; }
     to { text-shadow: 0 0 20px #ffffff, 0 0 30px #ff7518, 0 0 40px #ff7518; }
